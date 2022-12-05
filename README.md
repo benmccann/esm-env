@@ -7,7 +7,7 @@ Uses export conditions to return environment information in a way that works wit
 Install with `npm install esm-env`, then import as needed:
 
 ```js
-import { DEV, SSR } from 'esm-env';
+import { DEV, BROWSER } from 'esm-env';
 ```
 
 ## License
