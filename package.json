@@ -21,5 +21,7 @@
 				"default": "./prod-ssr.js"
 			}
 		}
-	}
+	},
+	"browser": "prod-browser.js",
+	"main": "index.js"
 }
