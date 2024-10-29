@@ -1,3 +1,3 @@
-export { default as BROWSER } from 'node-conditions/browser';
-export { default as DEV } from 'node-conditions/development';
-export { default as NODE } from 'node-conditions/node';
+export { default as BROWSER } from 'esm-env/browser';
+export { default as DEV } from 'esm-env/development';
+export { default as NODE } from 'esm-env/node';

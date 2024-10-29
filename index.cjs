@@ -1,3 +1,3 @@
-module.exports.BROWSER = require('node-conditions/browser');
-module.exports.DEV = require('node-conditions/development');
-module.exports.NODE = require('node-conditions/node');
+module.exports.BROWSER = require('esm-env/browser');
+module.exports.DEV = require('esm-env/development');
+module.exports.NODE = require('esm-env/node');
