@@ -23,7 +23,7 @@
 				}
 			},
 			"default": {
-				"node:": {
+				"node": {
 					"development": "./dev-node.js",
 					"default": "./node.js"
 				},
