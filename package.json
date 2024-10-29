@@ -11,38 +11,25 @@
 	"type": "module",
 	"exports": {
 		".": {
-			"types": "./index.d.ts",
-			"import": "./index.mjs",
-			"require": "./index.cjs"
-		},
-		"./browser": {
-			"import": {
-				"browser": "./true.mjs",
-				"default": "./false.mjs"
+			"browser": {
+				"node": {
+					"development": "./browser-dev-node.js",
+					"default": "./browser-node.js"
+				},
+				"default": {
+					"development": "./browser-dev.js",
+					"default": "./browser.js"
+				}
 			},
-			"require": {
-				"browser": "./true.cjs",
-				"default": "./false.cjs"
-			}
-		},
-		"./development": {
-			"import": {
-				"development": "./true.mjs",
-				"default": "./false.mjs"
-			},
-			"require": {
-				"development": "./true.cjs",
-				"default": "./false.cjs"
-			}
-		},
-		"./node": {
-			"import": {
-				"node": "./true.mjs",
-				"default": "./false.mjs"
-			},
-			"require": {
-				"node": "./true.cjs",
-				"default": "./false.cjs"
+			"default": {
+				"node:": {
+					"development": "./dev-node.js",
+					"default": "./node.js"
+				},
+				"default": {
+					"development": "./dev.js",
+					"default": "./none.js"
+				}
 			}
 		}
 	}

@@ -10,10 +10,6 @@ Install with `npm install esm-env`, then import as needed:
 import { BROWSER, DEV, NODE } from 'esm-env';
 ```
 
-## Acknowledgements
-
-Thank you to [dominikg](https://github.com/dominikg) for refining the approach used by this library to suggest a more scalable method for adding additional conditions.
-
 ## License
 
 [MIT](LICENSE)
