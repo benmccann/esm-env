@@ -12,13 +12,37 @@
 	"exports": {
 		".": {
 			"types": "./index.d.ts",
-			"browser": {
-				"development": "./dev-browser.js",
-				"default": "./prod-browser.js"
+			"import": "./index.mjs",
+			"require": "./index.cjs"
+		},
+		"./browser": {
+			"import": {
+				"browser": "./true.mjs",
+				"default": "./false.mjs"
 			},
-			"default": {
-				"development": "./dev-ssr.js",
-				"default": "./prod-ssr.js"
+			"require": {
+				"browser": "./true.cjs",
+				"default": "./false.cjs"
+			}
+		},
+		"./development": {
+			"import": {
+				"development": "./true.mjs",
+				"default": "./false.mjs"
+			},
+			"require": {
+				"development": "./true.cjs",
+				"default": "./false.cjs"
+			}
+		},
+		"./node": {
+			"import": {
+				"node": "./true.mjs",
+				"default": "./false.mjs"
+			},
+			"require": {
+				"node": "./true.cjs",
+				"default": "./false.cjs"
 			}
 		}
 	}
