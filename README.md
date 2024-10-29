@@ -7,8 +7,12 @@ Uses export conditions to return environment information in a way that works wit
 Install with `npm install esm-env`, then import as needed:
 
 ```js
-import { DEV, BROWSER } from 'esm-env';
+import { BROWSER, DEV, NODE } from 'esm-env';
 ```
+
+## Acknowledgements
+
+Thank you to [dominikg](https://github.com/dominikg) for refining the approach used by this library to suggest a more scalable method for adding additional conditions.
 
 ## License
 
