@@ -9,6 +9,9 @@
 	"homepage": "https://github.com/benmccann/esm-env",
 	"author": "Ben McCann (https://www.benmccann.com)",
 	"type": "module",
+	"scripts": {
+		"changeset:publish": "changeset publish"
+	},
 	"exports": {
 		".": {
 			"types": "./index.d.ts",
@@ -33,5 +36,9 @@
 				}
 			}
 		}
+	},
+	"devDependencies": {
+		"@changesets/cli": "^2.27.9",
+		"@svitejs/changesets-changelog-github-compact": "^1.2.0"
 	}
 }
