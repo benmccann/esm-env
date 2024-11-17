@@ -9,32 +9,27 @@
 	"homepage": "https://github.com/benmccann/esm-env",
 	"author": "Ben McCann (https://www.benmccann.com)",
 	"type": "module",
+	"sideEffects": false,
 	"scripts": {
 		"changeset:publish": "changeset publish"
 	},
 	"exports": {
 		".": {
 			"types": "./index.d.ts",
-			"browser": {
-				"node": {
-					"development": "./browser-dev-node.js",
-					"default": "./browser-node.js"
-				},
-				"default": {
-					"development": "./browser-dev.js",
-					"default": "./browser.js"
-				}
-			},
-			"default": {
-				"node": {
-					"development": "./dev-node.js",
-					"default": "./node.js"
-				},
-				"default": {
-					"development": "./dev.js",
-					"default": "./none.js"
-				}
-			}
+			"default": "./index.js"
+		},
+		"./browser": {
+			"browser": "./true.js",
+			"default": "./false.js"
+		},
+		"./development": {
+			"development": "./true.js",
+			"production": "./false.js",
+			"default": "./fallback.js"
+		},
+		"./node": {
+			"node": "./true.js",
+			"default": "./false.js"
 		}
 	},
 	"devDependencies": {
