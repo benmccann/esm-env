@@ -25,7 +25,7 @@
 		"./development": {
 			"development": "./true.js",
 			"production": "./false.js",
-			"default": "./fallback.js"
+			"default": "./dev-fallback.js"
 		},
 		"./node": {
 			"node": "./true.js",
