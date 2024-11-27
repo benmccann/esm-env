@@ -1,0 +1,11 @@
+{
+	"name": "esm-env-monorepo",
+	"version": "0.0.1",
+	"description": "monorepo for esm-env and friends",
+	"private": true,
+	"type": "module",
+	"packageManager": "pnpm@9.14.2",
+	"engines": {
+		"pnpm": "^9.0.0"
+	}
+}
