@@ -1,15 +1,7 @@
 # esm-env
 
-Uses export conditions to return environment information in a way that works with major bundlers and runtimes.
+### Packages
 
-## Usage
-
-Install with `npm install esm-env`, then import as needed:
-
-```js
-import { BROWSER, DEV, NODE } from 'esm-env';
-```
-
-## License
-
-[MIT](LICENSE)
+| Package                            | Changelog                                  |
+| ---------------------------------- | ------------------------------------------ |
+| [esm-env](packages/esm-env)        | [Changelog](packages/esm-env/CHANGELOG.md) |

@@ -1,0 +1,14 @@
+{
+  "name": "webpack-test",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "devDependencies": {
+    "esm-env": "workspace:^",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

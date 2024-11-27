@@ -1,0 +1,14 @@
+{
+  "name": "rollup-test",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c rollup.config.js"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "esm-env": "workspace:^",
+    "rollup": "^4.27.2"
+  }
+}
