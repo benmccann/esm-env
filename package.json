@@ -4,6 +4,13 @@
 	"description": "monorepo for esm-env and friends",
 	"private": true,
 	"type": "module",
+	"scripts": {
+		"changeset:publish": "changeset publish"
+	},
+	"devDependencies": {
+		"@changesets/cli": "^2.27.10",
+		"@svitejs/changesets-changelog-github-compact": "^1.2.0"
+	},
 	"packageManager": "pnpm@9.14.2",
 	"engines": {
 		"pnpm": "^9.0.0"

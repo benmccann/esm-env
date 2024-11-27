@@ -10,9 +10,6 @@
 	"author": "Ben McCann (https://www.benmccann.com)",
 	"type": "module",
 	"sideEffects": false,
-	"scripts": {
-		"changeset:publish": "changeset publish"
-	},
 	"exports": {
 		".": {
 			"types": "./index.d.ts",
@@ -31,9 +28,5 @@
 			"node": "./true.js",
 			"default": "./false.js"
 		}
-	},
-	"devDependencies": {
-		"@changesets/cli": "^2.27.9",
-		"@svitejs/changesets-changelog-github-compact": "^1.2.0"
 	}
 }
