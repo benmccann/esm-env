@@ -9,7 +9,6 @@
 	"homepage": "https://github.com/benmccann/esm-env",
 	"author": "Ben McCann (https://www.benmccann.com)",
 	"type": "module",
-	"sideEffects": false,
 	"exports": {
 		".": {
 			"types": "./index.d.ts",
@@ -17,7 +16,9 @@
 		},
 		"./browser": {
 			"browser": "./true.js",
-			"default": "./false.js"
+			"development": "./false.js",
+			"production": "./false.js",
+			"default": "./browser-fallback.js"
 		},
 		"./development": {
 			"development": "./true.js",
