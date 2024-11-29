@@ -1,5 +1,11 @@
 # esm-env
 
+## 1.2.1
+
+### Patch Changes
+
+- fix: address error in non-Vite bundlers when no conditions set ([#13](https://github.com/benmccann/esm-env/pull/13))
+
 ## 1.2.0
 
 ### Minor Changes
