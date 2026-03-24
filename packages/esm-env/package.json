@@ -15,7 +15,7 @@
 			"default": "./index.js"
 		},
 		"./browser": {
-			"workerd": "./false.js",
+			"worker": "./false.js",
 			"browser": "./true.js",
 			"development": "./false.js",
 			"production": "./false.js",
